@@ -14,7 +14,7 @@ function Todos({ todos, removeTodo }) {
 				className="list"
 				onMouseEnter={() => setIsHovering(true)}
 				onMouseLeave={() => setIsHovering(false)}>
-				<p>{i.text}</p>
+				<p>{i.label}</p>
 
 				<div className="icon-div">
 					<FontAwesomeIcon

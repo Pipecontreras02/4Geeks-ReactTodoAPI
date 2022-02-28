@@ -20,7 +20,8 @@ const TodoForm = (props) => {
 
 		props.onSubmit({
 			id: id,
-			text: input,
+			label: input,
+			done: false,
 		});
 		setInput("");
 		setId(id + 1);
@@ -32,7 +33,7 @@ const TodoForm = (props) => {
 				type="text"
 				placeholder="What needs to be done?"
 				value={input}
-				name="text"
+				name="label"
 				className="input"
 				onChange={OnChange}
 				ref={inputRef}></input>
